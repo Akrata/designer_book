@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     final gap = SizedBox(
       height: 1,
       child: DecoratedBox(
-        decoration: BoxDecoration(color: Colors.grey),
+        decoration: BoxDecoration(color: Colors.grey[300]),
       ),
     );
 
@@ -46,6 +46,7 @@ class MyApp extends StatelessWidget {
               gap,
               Tarjeta("Nombre Persona", "Experience : 04 years",
                   "assets/img/people.jpg"),
+              gap
             ],
           ),
         ),

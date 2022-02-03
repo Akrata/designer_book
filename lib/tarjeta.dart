@@ -42,19 +42,28 @@ class Tarjeta extends StatelessWidget {
               DecorationImage(fit: BoxFit.cover, image: AssetImage(pathImage))),
     );
 
-    final emailIcon = InkWell(
-      onTap: () {},
-      child: Container(
-        height: 50,
-        width: 50,
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(25), color: Colors.red[800]),
-        child: const Icon(
-          Icons.email,
+    final emailIcon = CircleAvatar(
+        radius: 25,
+        backgroundColor: Colors.red[600],
+        child: IconButton(
+          icon: Icon(Icons.email),
           color: Colors.white,
-        ),
-      ),
-    );
+          onPressed: () {},
+        ));
+
+    // final emailIcon = InkWell(
+    //   onTap: () {},
+    //   child: Container(
+    //     height: 50,
+    //     width: 50,
+    //     decoration: BoxDecoration(
+    //         borderRadius: BorderRadius.circular(25), color: Colors.red[800]),
+    //     child: const Icon(
+    //       Icons.email,
+    //       color: Colors.white,
+    //     ),
+    //   ),
+    // );
 
     final photoAndUser = Container(
       child: Row(
